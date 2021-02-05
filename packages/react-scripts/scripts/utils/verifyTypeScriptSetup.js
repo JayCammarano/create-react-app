@@ -143,7 +143,7 @@ function verifyTypeScriptSetup() {
       reason: 'to match webpack resolution',
     },
     resolveJsonModule: { value: true, reason: 'to match webpack loader' },
-    isolatedModules: { value: true, reason: 'implementation limitation' },
+    isolatedModules: { value: false, reason: 'for compatibility with tweetnacl-ts package' },
     noEmit: { value: true },
     jsx: {
       parsedValue:
@@ -290,7 +290,9 @@ function verifyTypeScriptSetup() {
   if (!fs.existsSync(paths.appTypeDeclarations)) {
     fs.writeFileSync(
       paths.appTypeDeclarations,
-      `/// <reference types="react-scripts" />${os.EOL}`
+      // hello-larkintuckerllc-react-scripts start
+      `/// <reference types="hello-larkintuckerllc-react-scripts" />${os.EOL}`
+      // hello-larkintuckerllc-react-scripts end
     );
   }
 }
