@@ -1,6 +1,6 @@
 {
   "name": "@jaycammarano/cra-isolatedmodules-false",
-  "version": "4.1",
+  "version": "4.1.0",
   "description": "Configuration and scripts for Create React App with isolatedModules set to false.",
   "repository": {
     "type": "git",
@@ -24,7 +24,7 @@
     "utils"
   ],
   "bin": {
-    "react-scripts": "./bin/react-scripts.js"
+    "react-scripts": "bin/react-scripts.js"
   },
   "types": "./lib/react-app.d.ts",
   "dependencies": {
@@ -85,7 +85,8 @@
     "webpack": "4.44.2",
     "webpack-dev-server": "3.11.0",
     "webpack-manifest-plugin": "2.2.0",
-    "workbox-webpack-plugin": "5.1.4"
+    "workbox-webpack-plugin": "5.1.4",
+    "fsevents": "^2.1.3"
   },
   "devDependencies": {
     "react": "^17.0.1",
